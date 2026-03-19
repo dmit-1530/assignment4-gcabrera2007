@@ -1,3 +1,110 @@
 body {
-    background-color: #eee;
+  background-color: #EEEEEE;
+  font-family: "Manrope", sans-serif;
+}
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Header */
+header {
+  width: 14.5rem;
+  height: 64.125rem;
+  background-color: #FFFFFF;
+  padding: 1.5rem;
+}
+
+/* Logo */
+h1 {
+  color: #727B81;
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+h1 span {
+  color: #0A91DE;
+}
+
+/* Welcome text */
+p {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #727B81;
+  margin-bottom: 1.25rem;
+  border-bottom: 0.09375rem solid #DDDDDD;
+}
+
+/* Nav */
+.main-menu {
+  list-style: none;
+}
+
+/* Links */
+.main-menu a {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+  padding: 0.75rem;
+  text-decoration: none;
+  color: #666F74;
+  border-radius: 0.5rem;
+  
+}
+
+/* Icons */
+svg {
+  height: 1.6875rem;
+  width: 1.6875rem;
+  flex-shrink: 0;
+  display: block; 
+  color: #666F74
+}
+
+/* Arrow */
+.arrow {
+  margin-left: auto;
+  height: 1.6875rem;
+  width: 1.6875rem;
+}
+
+/* Dropdown */
+.dropdown {
+  position: relative;
+}
+
+/* Submenu */
+.submenu {
+  position: absolute;
+  top: 0;
+  left: 105%;
+  background: white;
+  border: 0.09375rem solid #0A91DE;
+  width: 11.25rem;
+  height: auto;
+  padding: 0.625rem;
+  border-radius: 0.625rem;
+  list-style: none;
+  opacity: 0;
+  visibility: hidden;
+}
+
+/* Submenu items */
+.submenu li a {
+  padding: 0.75rem;
+  display: block;
+  color: #666F74;
+  font-size: 1.125rem;
+}
+
+.submenu li:not(:last-child) {
+  border-bottom: 1px solid #eee;
+}
+
+.dropdown:hover .submenu {
+  opacity: 1;
+  visibility: visible;
 }
