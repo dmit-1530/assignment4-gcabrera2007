@@ -52,7 +52,7 @@ p {
   text-decoration: none;
   color: #666F74;
   border-radius: 0.5rem;
-  
+
 }
 
 /* Icons */
@@ -61,14 +61,7 @@ svg {
   width: 1.6875rem;
   flex-shrink: 0;
   display: block; 
-  color: #666F74
-}
-
-/* Arrow */
-.arrow {
-  margin-left: auto;
-  height: 1.6875rem;
-  width: 1.6875rem;
+  color: #666F74;
 }
 
 /* Dropdown */
